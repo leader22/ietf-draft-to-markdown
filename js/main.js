@@ -15,4 +15,4 @@ import { txtToMarkdown } from './txt-to-markdown/index.js';
     const pos = $input.scrollTop / $input.scrollHeight;
     $output.scrollTop = $output.scrollHeight * pos;
   }());
-}());
+})();
