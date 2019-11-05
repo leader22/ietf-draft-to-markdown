@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ietf draft to markdown</title>
+  <style>
+    :root {
+      --header-height: 50px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 18px;
+    }
+    header {
+      height: var(--header-height);
+      text-align: center;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: calc(100vh - var(--header-height));
+    }
+    textarea {
+      background-color: #eee;
+      height: 100%;
+      padding: 4px;
+      font-size: 12px;
+      font-family: Menlo, Monaco, Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>Copy and paste draft texts, you will get markdown.</p>
+    <p>Remove page header and footer, escape figures w/ ```backquote``` manually.</p>
+  </header>
+  <main>
+    <textarea placeholder="If you paste raw draft text here,"></textarea>
+    <textarea readonly placeholder="Markdown formatted text appears!"></textarea>
+  </main>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>
